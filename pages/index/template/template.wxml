@@ -1,0 +1,29 @@
+<!--pages/index/template.wxml-->
+<!--wxml提供模板，在模板中定义代码片段，然后在不同的地方调用
+定义模板
+使用name属性，作为模板的名字，然后在template内定义代码片段
+使用模板
+使用js属性,声明需要使用的模板，然后传入所需的data
+is属性可以使用mustache语法，动态决定需要渲染哪个模板
+模板的作用域
+模板拥有自己的作用域，只能使用 data 传入的数据以及模版定义文件中定义的 <wxs /> 模块。
+-->
+<template name="msgItem">
+  <view>
+    <text>{{index}}: {{msg}}</text>
+    <text>Time: {{time}}</text>
+  </view>
+</template>
+
+<template is="msgItem" data="{{...item}}"/>
+
+
+<template name="old">
+  <view>old</view>
+</template>
+<template name="enev">
+  <view>enev</view>
+</template>
+<block wx:for="{{[1,2,3,4,5]}}">
+  <template is="{{item%2 ==0 ? 'enev':'old'}}"/> 
+</block>

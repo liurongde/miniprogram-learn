@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<import src="./quote/quote.wxml"/>
+<template is="item" data="{{text:'forbar'}}"/>
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view >
+    <text class="test">{{message}}</text>
+    <button bindtap='clickNext' class="test">下一句</button>
+  </view>
+  <view>
+    <navigator url='./template/template' class='template'><button >模板</button></navigator>
+    <navigator url='./event/event' class='template'><button >事件</button></navigator>
+    <navigator url='./quote/quote' class='template'><button >引用</button></navigator>
+    <navigator url='./quote/wsx' class='template'><button>wsx</button></navigator>
+    <navigator url='./component/component' class='template'><button>组件</button></navigator> 
+    <navigator url='./behaviors/behaviors' class='template'><button>behaviors</button></navigator>
+    <navigator url='./view/view' class='template'><button>view</button></navigator>
+    <navigator url='./icon/icon' class='template'><button>icon</button></navigator>
+    <navigator url='./icon/text' class='template'><button>text</button></navigator>
+    <navigator url='./form/button/button' class='template'><button>form</button></navigator>
+  </view>
+    
+  <!--列表渲染 wx:for-->
+  <!-- <view wx:for="{{array}}">
+    {{index}}:{{item.message}}
+  </view> -->
+  <!-- <view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+    {{idx}}:{{itemName.message}}
+  </view> -->
+  <!-- <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="i">
+    <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="j">
+      <view wx:if="{{i<=j}}">
+        {{i}}*{{j}} = {{i * j}}
+      </view>
+    </view>
+  </view> -->
+  <!--block wx:for-->
+  <!-- <block wx:for="{{[1,2,3]}}">
+    <view>{{index}}:</view>
+    <view>{{item}}</view>
+  </block> -->
+  <!--wx:key-->
+  
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

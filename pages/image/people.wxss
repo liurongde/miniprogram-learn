@@ -1,0 +1,13 @@
+/* pages/image/people.wxss */
+.language1{
+  color: red
+}
+.language2{
+  color: green;
+}
+.lan{
+  margin-top: 50px
+}
+#music{
+  margin-top: 30px
+}

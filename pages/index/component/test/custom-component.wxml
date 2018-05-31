@@ -1,0 +1,3 @@
+<!--pages/index/component/test/custom-component.wxml-->
+<!-- 页面的 WXML -->
+<custom-component>这段文本是黄色的</custom-component>

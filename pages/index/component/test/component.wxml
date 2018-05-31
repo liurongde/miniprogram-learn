@@ -1,0 +1,21 @@
+<!--pages/index/component/test/component.wxml-->
+<!-- 这是自定义组件的内部WXML结构 -->
+<!-- <view class="inner">
+  {{innerText}}
+</view>
+<slot></slot> -->
+
+<!-- 组件模板 -->
+<!-- <view class="wrapper">
+  <view>这里是组件的内部节点</view>
+  <slot></slot>
+</view> -->
+
+<!-- 组件模板 -->
+<view class="wrapper">
+  <slot name="before"></slot>
+  <view>这里是组件的内部细节</view>
+  <slot name="after"></slot>
+</view>
+<button bindtap='onTap'>点击这个按钮将触发“myEvent”事件</button>
+

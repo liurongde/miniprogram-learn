@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/image/people",
+    "pages/image/music",
+    "pages/index/template/template",
+    "pages/index/event/event",
+    "pages/index/quote/quote",
+    "pages/index/quote/wsx",
+    "pages/index/component/component",
+    "pages/index/component/test/component",
+    "pages/index/component/test/custom-component",
+    "pages/index/view/view",
+    "pages/index/icon/icon",
+    "pages/index/icon/text",
+    "pages/index/form/button/button",
+    "pages/index/form/checkbox/checkbox",
+    "pages/index/form/form/form",
+    "pages/index/form/input/input",
+    "pages/index/form/label/label",
+    "pages/index/form/picker/picker"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "起始页",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "position": "bottom",
+        "iconPath": "utils/images/im.jpg"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "position": "bottom",
+        "iconPath": "utils/images/im.jpg"
+      },
+      {
+        "pagePath": "pages/image/people",
+        "text": "图片",
+        "position": "bottom",
+        "iconPath": "utils/images/im.jpg"
+      }
+    ]
+  },
+  "debug": true
+}

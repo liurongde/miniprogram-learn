@@ -1,0 +1,4 @@
+/* pages/index/component/test/custom-component.wxss */
+:host {
+  color: yellow;
+}
