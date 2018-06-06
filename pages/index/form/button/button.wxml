@@ -18,5 +18,9 @@
 <navigator class='form' url='../input/input'><button class='but'>input</button></navigator>
 <navigator class='form' url='../label/label'><button class='but'>label</button></navigator>
 <navigator class='form' url='../picker/picker'><button class='but'>picker</button></navigator>
-
+<navigator class='form' url='../radio/radio'><button class='but'>radio</button></navigator>
+<navigator class='form' url='../image/image'><button class='but'>image</button></navigator>
+<navigator class='form' url='../camera/camera'><button class='but'>camera</button></navigator>
+<navigator class='form' url='../map/map'><button class='but'>map</button></navigator>
+<navigator class='form' url='../canvas/canvas'><button class='but'>canvas</button></navigator>
 </view>

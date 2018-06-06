@@ -1,3 +1,6 @@
-<!--pages/index/component/test/custom-component.wxml-->
+<!--pages/index/components/test/custom-components.wxml-->
 <!-- 页面的 WXML -->
-<custom-component>这段文本是黄色的</custom-component>
+<!--<custom-components></custom-components>-->
+<view bindcustomevent="myEventListener">event2
+  <slot/>
+</view>

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "component-tag-name": "test/component"
+    "component-tag-name": "test/component",
+    "custom-component":"test/custom-component"
   }
 }

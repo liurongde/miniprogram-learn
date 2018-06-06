@@ -1,4 +1,4 @@
-// pages/index/component/component.js
+// pages/index/components/components.js
 Page({
 
   /**
@@ -64,6 +64,14 @@ Page({
   
   },
   onMyEvent:function(e){
+    console.log('test')
     e.detail // 自定义组件触发事件时提供的detail对象
+  },
+  pageEventListener1:function(e){
+    // console.log("pageEventListener1:"+e.detail);
+  },
+  pageEventListener2:function (e) {
+    console.log("test")
+    // console.log("pageEventListener2:"+e.detail);
   }
 })

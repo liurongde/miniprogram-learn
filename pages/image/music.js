@@ -1,86 +1,24 @@
-// pages/image/music.js
-var app = getApp()
 Page({
+  onReady: function (e) {
+    // 使用 wx.createAudioContext 获取 audio 上下文 context
+    this.audioCtx = wx.createAudioContext('myAudio')
+  },
   data: {
+    poster: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000',
+    name: '此时此刻',
+    author: '许巍',
+    src: 'http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46'
   },
-  //播放  
-  listenerButtonPlay: function () {
-    wx.playBackgroundAudio({
-      dataUrl: 'https://i.y.qq.com/v8/playsong.html?songid=102636799&source=yqq#wechat_redirect',
-      title: '薛之谦',
-      //图片地址地址  
-      coverImgUrl: 'http://i.gtimg.cn/music/photo/mid_album_90/a/F/000QgFcm0v8WaF.jpg'
-
-    })
+  audioPlay: function () {
+    this.audioCtx.play()
   },
-  //监听button暂停按钮  
-  listenerButtonPause: function () {
-    wx.pauseBackgroundAudio({
-    });
-    console.log('暂停播放')
+  audioPause: function () {
+    this.audioCtx.pause()
   },
-  /**  
-   * 播放状态  
-   */
-  listenerButtonGetPlayState: function () {
-    wx.getBackgroundAudioPlayerState({
-      success: function (res) {
-        // success  
-        //duration  选定音频的长度（单位：s），只有在当前有音乐播放时返回  
-        console.log('duration:' + res.duration)
-        console.log('currentPosition:' + res.currentPosition)
-        //status    播放状态（2：没有音乐在播放，1：播放中，0：暂停中）  
-        console.log('status:' + res.status)
-        console.log('downloadPercent:' + res.downloadPercent)
-        //dataUrl   歌曲数据链接，只有在当前有音乐播放时返回   
-        console.log('dataUrl:' + res.dataUrl)
-      },
-      fail: function () {
-        // fail  
-      },
-      complete: function () {
-        // complete  
-      }
-    })
+  audio14: function () {
+    this.audioCtx.seek(14)
   },
-  /**  
-   * 设置进度  
-   */
-  listenerButtonSeek: function () {
-    wx.seekBackgroundAudio({
-      position: 40
-    })
-  },
-  /**  
-   * 停止播放  
-   */
-  listenerButtonStop: function () {
-    wx.stopBackgroundAudio({
-    })
-    console.log('停止播放')
-  },
-  onLoad: function (options) {
-    // 页面初始化 options为页面跳转所带来的参数    
-    /**   
-     * 监听音乐播放   
-     */
-    wx.onBackgroundAudioPlay(function () {
-      // callback  
-      console.log('onBackgroundAudioPlay')
-    })
-    /**  
-     * 监听音乐暂停  
-     */
-    wx.onBackgroundAudioPause(function () {
-      // callback  
-      console.log('onBackgroundAudioPause')
-    })
-    /**  
-     * 监听音乐停止  
-     */
-    wx.onBackgroundAudioStop(function () {
-      // callback  
-      console.log('onBackgroundAudioStop')
-    })
+  audioStart: function () {
+    this.audioCtx.seek(0)
   }
-})  
+})

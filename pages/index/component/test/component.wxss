@@ -1,5 +1,8 @@
-/* pages/index/component/test/component.wxss */
+/* pages/index/components/test/components.wxss */
 /* 这里的样式只应用于这个自定义组件 */
 .inner {
   color: green;
+}
+.wrapper{
+  color: red;
 }

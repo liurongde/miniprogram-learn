@@ -1,7 +1,7 @@
-<!--pages/index/component/component.wxml-->
+<!--pages/index/components/components.wxml-->
 <!--
 创建自定义组件
-类似于页面，一个自定义组件由 json wxml wxss js 4个文件组成。要编写一个自定义组件，首先需要在 json 文件中进行自定义组件声明（将 component 字段设为 true 可这一组文件设为自定义组件）：
+类似于页面，一个自定义组件由 json wxml wxss js 4个文件组成。要编写一个自定义组件，首先需要在 json 文件中进行自定义组件声明（将 components 字段设为 true 可这一组文件设为自定义组件）：
 同时，还要在 wxml 文件中编写组件模版，在 wxss 文件中加入组件样式，它们的写法与页面的写法类似。
 注意：在组件wxss中不应使用ID选择器、属性选择器和标签名选择器。
 在自定义组件的 js 文件中，需要使用 Component() 来注册组件，并提供组件的属性定义、内部数据和自定义方法。
@@ -11,7 +11,7 @@ https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/
 -->
   <!-- 以下是对一个自定义组件的引用 -->
 <!-- <view>
-  <component-tag-name inner-text="Some text"></component-tag-name>
+  <components-tag-name inner-text="Some text"></components-tag-name>
 </view> -->
 <!--
 组件模版和样式
@@ -43,18 +43,23 @@ https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/
 注意：在同一个节点上使用普通样式类和外部样式类时，两个类的优先级是未定义的，因此最好避免这种情况。
 -->
     <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
-<!-- <view>
-  <component-tag-name>
-    <view>这里是插入到组件slot中的内容</view>
-  </component-tag-name>
-</view> -->
+ <!--<view>-->
+  <!--<components-tag-name test="green-text">-->
+    <!--<view>这里是插入到组件slot中的内容</view>-->
+  <!--</components-tag-name>-->
+<!--</view>-->
 
 <!-- 引用组件的页面模版 -->
-<view>
-  <component-tag-name bind:myevent="onMyEvent"> 
-    <!-- 这部分内容将被放置在组件 <slot name="before"> 的位置上 -->
-    <view slot="before">这里是插入到组件slot name="before"中的内容</view>
-    <!-- 这部分内容将被放置在组件 <slot name="after"> 的位置上 -->
-    <view slot="after">这里是插入到组件slot name="after"中的内容</view>
-  </component-tag-name>
-</view>
+<!--<view>-->
+  <!--<components-tag-name bind:myevent="onMyEvent"> -->
+    <!--&lt;!&ndash; 这部分内容将被放置在组件 <slot name="before"> 的位置上 &ndash;&gt;-->
+    <!--<view slot="before">这里是插入到组件slot name="before"中的内容</view>-->
+    <!--&lt;!&ndash; 这部分内容将被放置在组件 <slot name="after"> 的位置上 &ndash;&gt;-->
+    <!--<view slot="after">这里是插入到组件slot name="after"中的内容</view>-->
+  <!--</components-tag-name>-->
+<!--</view>-->
+    <component-tag-name bindcustomevent="pageEventListener1">
+      <custom-component bindcustomevent="pageEventListener2">
+      </custom-component>
+    </component-tag-name>
+<!--<components-tag-name bindmyevent="onMyEvent" />-->

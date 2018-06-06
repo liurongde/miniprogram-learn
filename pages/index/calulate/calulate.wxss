@@ -1,0 +1,95 @@
+/* pages/index/calulate/calulate.wxss */
+.screen{
+    display: flex;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    /*width: 740rpx;*/
+    margin-top: 100rpx;
+    height: 230rpx;
+    justify-content:flex-end;
+    align-items: flex-end;
+    font-size: 100rpx;
+}
+.btnGroup{
+    display: flex;
+    flex-direction: row;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 150rpx;
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
+}
+.key{
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 187.5rpx;
+    min-height: 150rpx;
+    /*margin: 10px;*/
+    border-color:black ;
+    border-style: solid;
+    border-width:1rpx;
+    position:relative;
+    
+}
+.key:active{
+    top: 2px;
+    background-color: #aaaaaa;
+}
+.key clear{
+    color: orange;
+}
+.btnGroup-latest{
+    height: 300rpx;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 150rpx;
+}
+.key-left{
+    box-sizing: border-box;
+    width: 187.5rpx;
+    flex-grow: 1;
+    min-height: 150rpx;
+    /*margin: 10px;*/
+    border-color:black ;
+    border-style: solid;
+    border-width:1rpx;
+    position:relative;
+}
+.key-left:active{
+    top: 2px;
+    background-color: #aaaaaa;
+}
+.key-right{
+    box-sizing: border-box;
+    width: 187.5rpx;
+    /*min-height: 150rpx;*/
+    /*margin: 10px;*/
+    border-color:black ;
+    border-style: solid;
+    border-width:1rpx;
+    text-align: center;
+    height: 310rpx;
+    background-color: orange;
+    position:relative;
+}
+.ket-right:active{
+    top: 2px;
+    background-color: #aaaaaa;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    line-height: 350rpx;
+}

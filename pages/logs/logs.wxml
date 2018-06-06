@@ -18,6 +18,10 @@
 <!--条件渲染 wx:if-->
 <!-- <view wx:if="{{condition}}">TRUE</view>   --判断是否需要渲染该代码块 -->
 <!--wx:if是一个控制属性，需要将它添加到一个标签上，如果要一次性判断多个组件标签，可以使用一个<block/>标签将多个组件包装起来，加上wx:if控制属性block不是一个组件，只是一个包装元素，不会在页面中做任何渲染，只接受控制属性 wx：if有更高的切换消耗而hidden有更高的初始化渲染消耗，一次在频繁切换的情境下，用hidden更好，如果在运行时条件不大可能改变则wx:if较好-->
-<view wx:if="{{length > 5}}">1</view>
+<!-- <view wx:if="{{length > 5}}">1</view>
 <view wx:elif="{{length > 2}}">2</view>
-<view wx:else>3</view>
+<view wx:else>3</view> -->
+<view class="container">
+  <dialog id="dialog" title="我是标题" content="我是内容" cancelText="取消" confirm="确定" bind:cancelEvent="_cancelEvent" bind:confirmEvent="_confirmEvent"></dialog>
+  <button type="primary" bindtap="showDialog">ClickMe!</button>
+</view>

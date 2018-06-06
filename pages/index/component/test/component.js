@@ -1,4 +1,4 @@
-// pages/index/component/test/component.js
+// pages/index/components/test/components.js
 Page({
   
 })
@@ -27,5 +27,6 @@ Component({
       var myEventOption = {}  // 触发事件的选项
       this.triggerEvent('myevent', myEventDetail, myEventOption)  
     }
-  }
+  },
+  externalClasses:['test']
 })

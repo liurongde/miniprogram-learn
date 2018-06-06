@@ -1,10 +1,37 @@
 <!--pages/image/people.wxml-->
-<view class='container'>
-  <image src='../../utils/images/3.jpg'></image>
-  <view class='lan'>
-  <text class='language1'>唧唧复唧唧，木兰开灰机 \n</text>
-  <text class='language2'>远上寒山石径斜，白云深处有人家</text>
-  </view>
-  <navigator url='music' id='music'>音乐播放</navigator>
+<!--<view class='container'>-->
+  <!--<image src='../../utils/images/3.jpg'></image>-->
+  <!--<view class='lan'>-->
+  <!--<text class='language1'>唧唧复唧唧，木兰开灰机 \n</text>-->
+  <!--<text class='language2'>远上寒山石径斜，白云深处有人家</text>-->
+  <!--</view>-->
+  <!--<navigator url='music' id='music'>音乐播放</navigator>-->
+<!--</view>-->
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
 </view>
+
+<!--全部-->
+<view hidden="{{currentTab!==0}}">
+  全部
+</view>
+
+<!--精华-->
+<view hidden="{{currentTab!==1}}">
+  精华
+</view>
+<!--分享-->
+<view hidden="{{currentTab!==2}}">
+  分享
+</view>
+<!--问答-->
+<view hidden="{{currentTab!==3}}">
+  问答
+</view>
+<!--招聘-->
+<view hidden="{{currentTab!==4}}">
+  招聘
+</view>
+
 

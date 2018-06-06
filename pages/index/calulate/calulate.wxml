@@ -1,0 +1,46 @@
+<!--pages/index/calulate/calulate.wxml-->
+<view>
+    <view class="screen">
+        <view class="screenData">{{screenData}}</view>
+
+    </view>
+    <view class="keyword">
+        <view class="btnGroup">
+            <view class="key clear" bindtap="clickBtn" id="{{id1}}" style="color: orange">C</view>
+            <view class="key" bindtap="clickBtn" id="{{id2}}">←</view>
+            <view class="key" bindtap="clickBtn" id="{{id3}}">÷</view>
+            <view class="key" bindtap="clickBtn" id="{{id4}}">×</view>
+        <!--</view>-->
+        <!--<view class="btnGroup">-->
+            <view class="key" bindtap="clickBtn" id="{{id5}}">7</view>
+            <view class="key" bindtap="clickBtn" id="{{id6}}">8</view>
+            <view class="key" bindtap="clickBtn" id="{{id7}}">9</view>
+            <view class="key" bindtap="clickBtn" id="{{id8}}">-</view>
+        <!--</view>-->
+        <!--<view class="btnGroup">-->
+            <view class="key" bindtap="clickBtn" id="{{id9}}">4</view>
+            <view class="key" bindtap="clickBtn" id="{{id10}}">5</view>
+            <view class="key" bindtap="clickBtn" id="{{id11}}">6</view>
+            <view class="key" bindtap="clickBtn" id="{{id12}}">+</view>
+        </view>
+        <view class="btnGroup-latest">
+            <view class="left">
+                <view class="key-left" bindtap="clickBtn" id="{{id13}}">1</view>
+                <view class="key-left" bindtap="clickBtn" id="{{id14}}">2</view>
+                <view class="key-left" bindtap="clickBtn" id="{{id15}}">3</view>
+                <view class="key-left" bindtap="clickBtn" id="{{id16}}">%</view>
+                <view class="key-left" bindtap="clickBtn" id="{{id17}}">0</view>
+                <view class="key-left" bindtap="clickBtn" id="{{id18}}">.</view>
+            </view>
+            <view class="right">
+                <view class="key-right" bindtap="clickBtn" id="{{id19}}">=</view>
+            </view>
+
+
+        </view>
+        <!--<view class="btnGroup">-->
+            <!--&lt;!&ndash;<view class="key" bindTap="clickBtn" id="{{id16}}}">=</view>&ndash;&gt;-->
+        <!--</view>-->
+    </view>
+
+</view>

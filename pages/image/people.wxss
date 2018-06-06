@@ -1,13 +1,43 @@
 /* pages/image/people.wxss */
-.language1{
-  color: red
+/*.language1{*/
+  /*color: red*/
+/*}*/
+/*.language2{*/
+  /*color: green;*/
+/*}*/
+/*.lan{*/
+  /*margin-top: 50px*/
+/*}*/
+/*#music{*/
+  /*margin-top: 30px*/
+/*}*/
+
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-.language2{
-  color: green;
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
 }
-.lan{
-  margin-top: 50px
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
 }
-#music{
-  margin-top: 30px
+.navbar .item.active{
+  color: #FFCC00;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #FFCC00;
 }

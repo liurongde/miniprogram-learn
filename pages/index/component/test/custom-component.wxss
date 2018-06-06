@@ -1,4 +1,4 @@
-/* pages/index/component/test/custom-component.wxss */
-:host {
-  color: yellow;
-}
+/* pages/index/components/test/custom-components.wxss */
+/*:host {*/
+  /*color: yellow;*/
+/*}*/

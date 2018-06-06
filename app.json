@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/index/calulate/calulate",
     "pages/index/index",
     "pages/logs/logs",
     "pages/image/people",
@@ -19,7 +20,14 @@
     "pages/index/form/form/form",
     "pages/index/form/input/input",
     "pages/index/form/label/label",
-    "pages/index/form/picker/picker"
+    "pages/index/form/picker/picker",
+    "pages/index/form/radio/radio",
+    "pages/index/form/image/image",
+    "pages/index/form/camera/camera",
+    "pages/index/form/map/map",
+    "pages/index/form/canvas/canvas",
+    "components/Dialog/dialog",
+    "components/Node/node"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -30,14 +38,14 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页",
+        "pagePath": "pages/index/calulate/calulate",
+        "text": "计算器",
         "position": "bottom",
         "iconPath": "utils/images/im.jpg"
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "日志",
+        "text": "自定义组件",
         "position": "bottom",
         "iconPath": "utils/images/im.jpg"
       },

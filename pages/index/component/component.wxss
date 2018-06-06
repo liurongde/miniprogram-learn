@@ -1,1 +1,4 @@
-/* pages/index/component/component.wxss */
+/* pages/index/components/components.wxss */
+.green-text{
+  color: green;
+}

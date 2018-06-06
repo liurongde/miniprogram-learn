@@ -1,4 +1,4 @@
-<!--
+  <!--
 WXS（WeiXin Script）是小程序的一套脚本语言，结合 WXML，可以构建出页面的结构。
 注意
   wxs 不依赖于运行时的基础库版本，可以在所有版本的小程序中运行。
@@ -97,3 +97,28 @@ function：函数
 array : 数组
 date：日期
 regexp：正则 -->
+
+<!-- <view class='flex-row' style='display:flex;'>
+  <view class='flex-view-item'>1</view>
+  <view class='flex-view-item'>2</view>
+  <view class='flex-view-item'>3</view>
+</view>
+
+<view >
+    <view class="flex-row" style="display: flex;flex-direction: row;">
+        <view class="flex-view-item">1</view>
+        <view class="flex-view-item">2</view>
+        <view class="flex-view-item">3</view>
+    </view>
+    <view class="flex-column" style="display:flex;flex-direction: column;" >
+        <view class="flex-view-item">c1</view>
+        <view class="flex-view-item">c2</view>
+        <view class="flex-view-item">c3</view>
+    </view>
+</view> -->
+<view>
+    <view class='test' style='display:flex'>
+      <view class='item'>1</view>
+      <view class='item' style='align-self:center'>2</view>
+    </view>
+</view>
